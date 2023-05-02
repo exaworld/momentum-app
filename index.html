@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./index.js" defer="true"></script>
+    <script src="./quotes.js" defer="true"></script>
+</head>
+<body> 
+    <div id="greeting-container">
+        <input
+            class="input-setup"
+            id="name-input"
+            type="text"
+            name="greeting-input"
+            maxlength="15"
+            placeholder="What is your name?"
+        />
+    </div>
+    <div id="mid-container">
+        <h1 id="time-stamp">12:00</h1>
+        <textarea
+            class="input-setup"
+            id="main-goal-input"
+            type="text"
+            name="main-goal-input"
+            maxlength="25"
+            placeholder="What is you goal for today?"
+        ></textarea>
+    </div>
+    <div id="quotes-container">
+        <div id="quotes-editor" class="quotes-editor-inactive">
+            <div id="quote-input-container">
+                <textarea
+                    id="quote-input"
+                    type="text"
+                    name="quote-input"
+                    maxlength="100"
+                    placeholder="Minimum 15 & Maximum 100 Characters"
+                ></textarea>
+                <div id="quotes-options">
+                    <button id="update-button">Save</button>
+                    <button id="cancel-button">Cancel</button>
+                </div>
+            </div>
+            <div id="quotes-list-container"></div>
+        </div>
+        <div id="displayed-quote"></div>
+    </div>
+</body>
+</html>
